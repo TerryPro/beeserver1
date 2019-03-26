@@ -4,7 +4,7 @@ COPY . /go/src/beeserver
 WORKDIR /go/src/beeserver
 
 RUN apk --no-cache add git
-RUN go get ./
+RUN go get -v ./
 RUN go build
 
 CMD beeserver
